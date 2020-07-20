@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "beautify": "0.0.8",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "nuxt": "^2.0.0",
     "prismjs": "^1.20.0",
     "vue-prism-component": "^1.2.0"

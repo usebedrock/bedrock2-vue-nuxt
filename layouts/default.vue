@@ -3,7 +3,7 @@
     export default {
       data: function() {
           return {
-            navActive: false
+            navActive: true
           }
       },
 
@@ -11,7 +11,17 @@
         prototypeNav
       },
 
+      created () {
+        window.addEventListener('keyup', this.handleKeyup);
+        window.addEventListener('keyup', this.handleKeyup)
+      },
+
       methods: {
+        handleKeyup (e) {
+          if (e.keyCode === 77 && e.ctrlKey) this.toggleSidebar();
+          if (e.keyCode === 66 && e.ctrlKey) this.toggleSidebar()
+        },
+
         toggleSidebar: function() {
           this.navActive = !this.navActive;
         }
@@ -20,8 +30,11 @@
 </script>
 
 <template>
-  <div class="br-prototype-wrapper" v-on:keyup.ctrl.77="toggleSidebar" v-on:keyup.ctrl.66="toggleSidebar" tabindex="-1">
-    <div class="br-prototype-wrapper__content" :class='{ "br-prototype-wrapper__content--navOpen" : navActive }'>
+  <div class="br-prototype-wrapper">
+    <div
+      class="br-prototype-wrapper__content"
+      :class='{ "br-prototype-wrapper__content--navOpen" : navActive }'
+    >
       <nuxt />
     </div>
     <div class="br-prototype-wrapper__nav" v-if="navActive">

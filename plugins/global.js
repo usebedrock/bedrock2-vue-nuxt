@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import { VueHammer } from 'vue2-hammer'
 import styleguideSample from '~/components/styleguide/styleguideSample.vue'
 Vue.component('styleguideSample', styleguideSample)
 

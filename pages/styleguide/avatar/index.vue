@@ -23,20 +23,31 @@
     <styleguideSample
       name="Sizes"
       :order='3'
-      code="
-        <Avatar imgSrc='/images/avatars/tb.jpg' size='xsmall'/>
-        <Avatar imgSrc='/images/avatars/tb.jpg' size='small'/>
-        <Avatar imgSrc='/images/avatars/tb.jpg' size='default'/>
-        <Avatar imgSrc='/images/avatars/tb.jpg' size='large'/>
-      "
+      :code="sizeSampleCode"
     >
-      <Stack :space='2' horizontal>
-        <Avatar imgSrc='/images/avatars/tb.jpg' size='xsmall'/>
-        <Avatar imgSrc='/images/avatars/tb.jpg' size='small'/>
-        <Avatar imgSrc='/images/avatars/tb.jpg' size='default'/>
-        <Avatar imgSrc='/images/avatars/tb.jpg' size='large'/>
-      </Stack>
+      <sizeSample/>
     </styleguideSample>
 
   </div>
 </template>
+
+<script>
+import sizeSampleCode from '!!raw-loader!./sizeSample'
+import sizeSample from './sizeSample'
+
+export default {
+  head() {
+    return {
+      title: "Avatar"
+    };
+  },
+  components: {
+    sizeSample
+  },
+  data() {
+    return {
+      sizeSampleCode
+    }
+  }
+}
+</script>

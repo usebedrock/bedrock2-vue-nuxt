@@ -6,7 +6,7 @@
     <styleguideSample
       name="Icon button"
       :order='1'
-      vueImp='
+      code='
         <Button layout="icon" theme="primary">
           <span class="c-button__icon-wrap"><Icon icon="arrow-left" size="20" /></span>
           <span class="u-hide-accessibility">Terug</span>
@@ -22,7 +22,7 @@
     <styleguideSample
       name="Text button"
       :order='2'
-      vueImp='<Button theme="primary">Label</Button>'
+      code='<Button theme="primary">Label</Button>'
     >
         <Button theme="primary">Label</Button>
     </styleguideSample>

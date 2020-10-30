@@ -75,7 +75,7 @@
     top: 0;
     overflow: scroll;
     background: #FFF;
-    padding: 2.4rem;
+    padding: 1.2rem;
     box-shadow: 0 0 0.8rem rgba(0,0,0,0.15);
   }
 

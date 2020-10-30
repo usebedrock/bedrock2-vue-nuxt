@@ -1,16 +1,21 @@
 <template>
-  <div>
-    <main>
-      <h1 class="c-h1">App name</h1>
-      <div class="c-form-group">
+  <div class="row">
+    <div class="col-lg-4 mt-4 mb-4"></div>
+    <main class="p-4 card mt-4 mb-4 col-lg-4">
+
+      <h1 class="h2 pb-2">App name</h1>
+
+      <div class="mb-3">
         <label for="email">E-mail</label>
-        <input type="text" id="email" class="c-input" placeholder="naam@email.com" />
+        <input type="text" id="email" class="form-control" placeholder="naam@email.com" />
       </div>
-      <div class="c-form-group">
+      <div class="mb-3">
         <label for="password">Password</label>
-        <input type="password" id="password" class="c-input" placeholder="Your password" />
+        <input type="password" id="password" class="form-control" placeholder="Your password" />
       </div>
-      <a href="/app/dashboard" class="c-button c-button--primary">Sign in</a>
+      <a href="/app/dashboard" class="btn btn-primary">Sign in</a>
     </main>
+    <div class="col-lg-4"></div>
+
   </div>
 </template>

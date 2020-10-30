@@ -14,7 +14,7 @@
 
 <template>
   <div>
-    <h1 class="c-h3">Prototype navigation</h1>
+    <h1 class="h4">Prototype navigation</h1>
     <p class="u-text-small">Press Ctrl + M to toggle this navigation or <a class="c-link" @click.prevent="toggle">click here.</a></p>
     <pageTree />
   </div>
